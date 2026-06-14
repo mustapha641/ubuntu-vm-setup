@@ -198,4 +198,6 @@ Checking SSH Service Status
 The status of the SSH service was verified using:
 ```sudo systemctl status ssh```
 
+## SSH Service Status
 
+![SSH Status](images/ssh-status.png)
