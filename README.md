@@ -2,7 +2,7 @@ ubuntu-vm-setup
 
 Project Overview
 
-This project demonstrates the setup of a Linux virtual machine using **Oracle VirtualBox** with an Ubuntu operating system. It is part of my DevOps learning journey to build hands-on experience with Linux systems, virtualization, networking, and SSH access.
+This project demonstrates the setup of a Linux virtual machine using Oracle VirtualBox with an Ubuntu operating system. It is part of my DevOps learning journey to build hands-on experience with Linux systems, virtualization, networking, and SSH access.
 
 The lab environment created here serves as a foundation for practicing real-world DevOps and system administration tasks.
 
@@ -55,7 +55,6 @@ Configured NAT for internet access and optionally Bridged Adapter for local netw
 6. Install SSH Server
 Installed and enabled OpenSSH server:
 
-```bash
 sudo apt update
 sudo apt install openssh-server -y
 
@@ -161,8 +160,7 @@ Run the following command inside the Ubuntu VM:
 sudo apt install openssh-server -y
 System Issue: Debian Package Manager DPKG Configuration Error
 
-
-## 📌 Problem Description
+Problem Description
 
 During system setup and package installation, an error was encountered indicating that some packages were not fully configured.
 
@@ -182,3 +180,20 @@ Solution Applied
 To resolve the issue, the following steps were executed:
 1. Reconfigure dpkg
 sudo dpkg --configure -a
+
+                                Starting and Checking SSH Service on Ubuntu VM
+
+Objective
+This section documents how the SSH service was started, enabled, and verified on an Ubuntu Virtual Machine to ensure remote access is working properly.
+
+Starting the SSH Service
+
+After installing OpenSSH Server, the SSH service was started using:
+sudo systemctl start ssh
+
+To ensure SSH starts automatically on system boot:
+sudo systemctl enable ssh
+
+Checking SSH Service Status
+The status of the SSH service was verified using:
+sudo systemctl status ssh
