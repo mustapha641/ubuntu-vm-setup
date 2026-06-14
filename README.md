@@ -56,10 +56,10 @@ Configured NAT for internet access and optionally Bridged Adapter for local netw
 Installed and enabled OpenSSH server:
 
 sudo apt update
-sudo apt install openssh-server -y
+```sudo apt install openssh-server -y```
 
 
-    Virtual Machine Boot & Installation Process
+                                       Virtual Machine Boot & Installation Process
 
 This section documents the process of booting and installing Ubuntu on a VirtualBox virtual machine.
 
@@ -157,7 +157,7 @@ SSH is a fundamental tool in DevOps, Cloud Computing, and System Administration.
 
 1. Install OpenSSH Server
 Run the following command inside the Ubuntu VM:
-sudo apt install openssh-server -y
+```sudo apt install openssh-server -y```
 System Issue: Debian Package Manager DPKG Configuration Error
 
 Problem Description
@@ -165,7 +165,7 @@ Problem Description
 During system setup and package installation, an error was encountered indicating that some packages were not fully configured.
 
 The system displayed the following message:
-> "You must manually run `sudo dpkg --configure -a` to correct the problem"
+> "You must manually run ```sudo dpkg --configure -a``` to correct the problem"
 
 This indicates that the package installation process was interrupted or not completed successfully.
 
@@ -179,7 +179,7 @@ This issue commonly occurs due to:
 Solution Applied
 To resolve the issue, the following steps were executed:
 1. Reconfigure dpkg
-sudo dpkg --configure -a
+```sudo dpkg --configure -a```
 
                                 Starting and Checking SSH Service on Ubuntu VM
 
@@ -189,11 +189,13 @@ This section documents how the SSH service was started, enabled, and verified on
 Starting the SSH Service
 
 After installing OpenSSH Server, the SSH service was started using:
-sudo systemctl start ssh
+```sudo systemctl start ssh```
 
 To ensure SSH starts automatically on system boot:
-sudo systemctl enable ssh
+```sudo systemctl enable ssh```
 
 Checking SSH Service Status
 The status of the SSH service was verified using:
-sudo systemctl status ssh
+```sudo systemctl status ssh```
+
+
