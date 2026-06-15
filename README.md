@@ -207,4 +207,31 @@ SSH Service Status
 
 The SSH service is now running and listening on port 22.
 
+---
 
+## 📸 Project Screenshots
+
+Below are all 11 screenshots documenting the Ubuntu VM setup process:
+
+### VirtualBox Installation & Configuration
+[![VirtualBox Ubuntu VM](./image/1-virtualbox-ubuntu-vm.png)](./image/1-virtualbox-ubuntu-vm.png)
+[![Ubuntu Desktop Loading](./image/2-ubuntu-desktop-loading.png)](./image/2-ubuntu-desktop-loading.png)
+[![Terminal dpkg Error](./image/3-terminal-dpkg-error.png)](./image/3-terminal-dpkg-error.png)
+[![Ubuntu Download Page](./image/4-ubuntu-download-page.png)](./image/4-ubuntu-download-page.png)
+
+### SSH Service & System Configuration
+[![SSH Service Status](./image/5-ssh-service-status.png)](./image/5-ssh-service-status.png)
+[![VirtualBox VM Hardware](./image/6-virtualbox-vm-hardware.png)](./image/6-virtualbox-vm-hardware.png)
+
+### Boot & Setup Process
+[![GRUB Boot Menu](./image/7-grub-boot-menu.png)](./image/7-grub-boot-menu.png)
+[![APT Update](./image/8-apt-update.png)](./image/8-apt-update.png)
+
+### VirtualBox Downloads & Setup Wizard
+[![Oracle VirtualBox Downloads](./image/9-oracle-virtualbox-downloads.png)](./image/9-oracle-virtualbox-downloads.png)
+[![VirtualBox VM Summary](./image/10-virtualbox-vm-summary.png)](./image/10-virtualbox-vm-summary.png)
+[![VirtualBox VM Setup](./image/11-virtualbox-vm-setup.png)](./image/11-virtualbox-vm-setup.png)
+
+---
+
+**[📁 View All Images Folder](./image)**
