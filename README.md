@@ -235,3 +235,44 @@ Below are screenshots documenting the Ubuntu VM setup process:
 ---
 
 **[📁 View All Images Folder](./image)**
+
+
+
+
+                            VirtualBox Networking: NAT vs Bridged Adapter
+Overview
+
+This project explains two common VirtualBox network configurations used in virtual machine setup: NAT and Bridged Adapter. These networking modes determine how a virtual machine connects to the internet and interacts with other devices.
+
+NAT (Network Address Translation)
+
+NAT allows a virtual machine to access the internet through the host computer’s network connection.
+
+How it works:
+- The VM shares the host machine’s internet connection
+- The VM is not directly visible on the external network
+- Communication is mostly one-way (VM → internet)
+
+Advantages:
+- Easy to configure (works by default in most cases)
+- Secure and isolated from external devices
+- Good for updates and general use
+
+Limitations:
+- Cannot be accessed directly from other devices
+- Not ideal for server or SSH testing
+- 
+Bridged Adapter
+
+Bridged Adapter connects the virtual machine directly to the same network as the host computer.
+How it works:
+- VM gets its own IP address from the router
+- VM appears as a separate device on the network
+- Full two-way communication with other devices
+Advantages:
+- Supports SSH and remote access
+- Ideal for DevOps and server practice
+- More realistic networking setup
+Limitations:
+- Slightly less secure than NAT
+- Depends on network/router settings
