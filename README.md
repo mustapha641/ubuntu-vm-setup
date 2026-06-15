@@ -2,7 +2,7 @@ ubuntu-vm-setup
 
 Project Overview
 
-This project demonstrates the setup of a Linux virtual machine using Oracle VirtualBox with an Ubuntu operating system. It is part of my DevOps learning journey to build hands-on experience with Linux systems, virtualization, networking, and SSH access.
+This project demonstrates the setup of a Linux virtual machine using Oracle VirtualBox with an Ubuntu operating system. It is part of my DevOps learning journey to build hands-on experience with Linux administration and virtualization.
 
 The lab environment created here serves as a foundation for practicing real-world DevOps and system administration tasks.
 
@@ -16,7 +16,7 @@ The lab environment created here serves as a foundation for practicing real-worl
 - Enable and use SSH for remote access
 - Build a reusable Linux lab environment for DevOps practice
 
-       Tools & Technologies
+        Tools & Technologies
 
 - Oracle VirtualBox
 - Ubuntu (Intel/AMD64 version)
@@ -26,7 +26,7 @@ The lab environment created here serves as a foundation for practicing real-worl
 
 ---
 
-      Virtual Machine Configuration
+       Virtual Machine Configuration
 
 - OS Type: Ubuntu 64-bit  
 - RAM: 2GB – 4GB  
@@ -35,7 +35,7 @@ The lab environment created here serves as a foundation for practicing real-worl
 - Network Mode: NAT (with optional Bridged Adapter)
 
 
-       Setup Process Summary
+        Setup Process Summary
 
 1. Install VirtualBox
 Downloaded and installed Oracle VirtualBox and Extension Pack.
@@ -59,11 +59,11 @@ sudo apt update
 ```sudo apt install openssh-server -y```
 
 
-                                       Virtual Machine Boot & Installation Process
+                                        Virtual Machine Boot & Installation Process
 
 This section documents the process of booting and installing Ubuntu on a VirtualBox virtual machine.
 
-                                              Boot Menu
+                                               Boot Menu
 
 After starting the virtual machine, the following boot options appeared:
 
@@ -74,7 +74,9 @@ The standard option selected: Try or Install Ubuntu
 
 This launches the Ubuntu installer environment.
 
-                                             Installation Steps
+![GRUB Boot Menu](./image/7-grub-boot-menu.png)
+
+                                              Installation Steps
 
 The installation process follows these stages:
 1. Language Selection
@@ -95,26 +97,39 @@ The installation process follows these stages:
 - Password configured
 - Hostname defined (e.g., ubuntu-vm)
 
-                                       Virtual Machine Configuration
+                                        Virtual Machine Configuration
 
 - RAM: 2GB – 4GB  
 - CPU: 2 cores  
 - Storage: 20GB – 25GB (dynamic disk)  
 - Network Mode: NAT  
 
-                                        Screenshots (To Be Added)
+![VirtualBox Downloads Page](./image/9-oracle-virtualbox-downloads.png)
 
-The following screenshots will be included in the `images/` folder:
+![VirtualBox VM Hardware Configuration](./image/6-virtualbox-vm-hardware.png)
 
-- VirtualBox VM creation screen  
-- Ubuntu boot menu  
-- Installation wizard steps  
-- User account setup  
-- Installation progress screen  
-- Successful login screen  
+![VirtualBox VM Summary](./image/10-virtualbox-vm-summary.png)
+
+![VirtualBox VM Setup](./image/11-virtualbox-vm-setup.png)
+
+                                         Screenshots
+
+The following screenshots document the setup process:
+
+![VirtualBox Ubuntu VM](./image/1-virtualbox-ubuntu-vm.png)
+
+![Ubuntu Desktop Loading](./image/2-ubuntu-desktop-loading.png)
+
+![Terminal dpkg Error](./image/3-terminal-dpkg-error.png)
+
+![Ubuntu Download Page](./image/4-ubuntu-download-page.png)
+
+![SSH Service Status](./image/5-ssh-service-status.png)
+
+![APT Update](./image/8-apt-update.png)
 
 
-                                                Objective
+                                                 Objective
 
 The goal of this setup is to:
 
@@ -123,26 +138,26 @@ The goal of this setup is to:
 - Understand virtualization concepts
 - Prepare a foundation for DevOps tools (SSH, Docker, etc.)
 
-                                        Ubuntu Installation Completion
+                                         Ubuntu Installation Completion
 
 Status
 The Ubuntu virtual machine has been successfully installed and is now running inside Oracle VirtualBox.
 
 The system booted into the Ubuntu desktop environment after completing the installation process.
 
-                                            Post-Installation Setup
+                                             Post-Installation Setup
 
 After installation, the following steps were completed:
 System Boot
 - Ubuntu successfully booted into the desktop environment
 - Virtual machine is running normally on VirtualBox
 
-                                               System Update
+                                                System Update
 The system was updated using:
 sudo apt update && sudo apt upgrade -y
-                                     SSH Setup and Remote Access Configuration
+                                      SSH Setup and Remote Access Configuration
 
-                                              Overview of SSH
+                                               Overview of SSH
 
 SSH (Secure Shell) is a network protocol used to securely access and manage a remote machine over an unsecured network.
 
@@ -153,7 +168,7 @@ In this project, SSH is used to:
 
 SSH is a fundamental tool in DevOps, Cloud Computing, and System Administration.
 
-                                            SSH Installation Process
+                                             SSH Installation Process
 
 1. Install OpenSSH Server
 Run the following command inside the Ubuntu VM:
@@ -181,7 +196,7 @@ To resolve the issue, the following steps were executed:
 1. Reconfigure dpkg
 ```sudo dpkg --configure -a```
 
-                                Starting and Checking SSH Service on Ubuntu VM
+                                 Starting and Checking SSH Service on Ubuntu VM
 
 Objective
 This section documents how the SSH service was started, enabled, and verified on an Ubuntu Virtual Machine to ensure remote access is working properly.
@@ -200,4 +215,4 @@ The status of the SSH service was verified using:
 
 ## SSH Service Status
 
-![SSH Status](images/ssh-status.png)
+![SSH Status](./image/5-ssh-service-status.png)
