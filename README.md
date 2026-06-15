@@ -203,6 +203,8 @@ Checking SSH Service Status
 The status of the SSH service was verified using:
 ```sudo systemctl status ssh```
 
-## SSH Service Status
+SSH Service Status
 
 The SSH service is now running and listening on port 22.
+
+[![SSH Status](images/ssh-status.png)](images/ssh-status.png)
