@@ -211,7 +211,7 @@ The SSH service is now running and listening on port 22.
 
 ## 📸 Project Screenshots
 
-Below are all 11 screenshots documenting the Ubuntu VM setup process:
+Below are screenshots documenting the Ubuntu VM setup process:
 
 ### VirtualBox Installation & Configuration
 [![VirtualBox Ubuntu VM](./image/1-virtualbox-ubuntu-vm.png)](./image/1-virtualbox-ubuntu-vm.png)
