@@ -74,8 +74,6 @@ The standard option selected: Try or Install Ubuntu
 
 This launches the Ubuntu installer environment.
 
-![GRUB Boot Menu](./image/7-grub-boot-menu.png)
-
                                               Installation Steps
 
 The installation process follows these stages:
@@ -104,29 +102,21 @@ The installation process follows these stages:
 - Storage: 20GB – 25GB (dynamic disk)  
 - Network Mode: NAT  
 
-![VirtualBox Downloads Page](./image/9-oracle-virtualbox-downloads.png)
-
-![VirtualBox VM Hardware Configuration](./image/6-virtualbox-vm-hardware.png)
-
-![VirtualBox VM Summary](./image/10-virtualbox-vm-summary.png)
-
-![VirtualBox VM Setup](./image/11-virtualbox-vm-setup.png)
-
                                          Screenshots
 
-The following screenshots document the setup process:
+The following screenshots are available in the `image/` folder:
 
-![VirtualBox Ubuntu VM](./image/1-virtualbox-ubuntu-vm.png)
-
-![Ubuntu Desktop Loading](./image/2-ubuntu-desktop-loading.png)
-
-![Terminal dpkg Error](./image/3-terminal-dpkg-error.png)
-
-![Ubuntu Download Page](./image/4-ubuntu-download-page.png)
-
-![SSH Service Status](./image/5-ssh-service-status.png)
-
-![APT Update](./image/8-apt-update.png)
+- 1-virtualbox-ubuntu-vm.png
+- 2-ubuntu-desktop-loading.png
+- 3-terminal-dpkg-error.png
+- 4-ubuntu-download-page.png
+- 5-ssh-service-status.png
+- 6-virtualbox-vm-hardware.png
+- 7-grub-boot-menu.png
+- 8-apt-update.png
+- 9-oracle-virtualbox-downloads.png
+- 10-virtualbox-vm-summary.png
+- 11-virtualbox-vm-setup.png
 
 
                                                  Objective
@@ -215,4 +205,4 @@ The status of the SSH service was verified using:
 
 ## SSH Service Status
 
-![SSH Status](./image/5-ssh-service-status.png)
+The SSH service is now running and listening on port 22.
