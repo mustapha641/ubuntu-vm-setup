@@ -207,4 +207,4 @@ SSH Service Status
 
 The SSH service is now running and listening on port 22.
 
-[![SSH Status](images/ssh-status.png)](images/ssh-status.png)
+
